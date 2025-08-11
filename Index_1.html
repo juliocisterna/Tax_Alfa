@@ -1,1 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alfa Corp Consultores — Replica</title>
+  <style>
+    /* estilos existentes */
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <!-- contenido existente -->
+
+  <!-- Footer -->
+  <!-- contenido existente -->
+
+  <script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    Chatbot.init({
+        chatflowid: "3b67b6f4-de82-4f74-abd1-959482bad2ef",
+        apiHost: "https://cloud.flowiseai.com",
+        chatflowConfig: {},
+        observersConfig: {},
+        theme: {
+            button: {
+                backgroundColor: '#3B81F6',
+                right: 20,
+                bottom: 20,
+                size: 48,
+                dragAndDrop: true,
+                iconColor: 'white',
+                customIconSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
+                autoWindowOpen: {
+                    autoOpen: true,
+                    openDelay: 2,
+                    autoOpenOnMobile: false
+                }
+            },
+            tooltip: {
+                showTooltip: true,
+                tooltipMessage: 'Hola! 👋👋👋',
+                tooltipBackgroundColor: 'black',
+                tooltipTextColor: 'white',
+                tooltipFontSize: 16
+            },
+            disclaimer: {
+                title: 'Disclaimer',
+                message: "Al utilizar esta Tax Alfa creado con IA, acuerda las condiciones y términos",
+                textColor: 'black',
+                buttonColor: '#3b82f6',
+                buttonText: 'Start Chatting',
+                buttonTextColor: 'white',
+                blurredBackgroundColor: 'rgba(0, 0, 0, 0.4)',
+                backgroundColor: 'white'
+            },
+            customCSS: ``,
+            chatWindow: {
+                showTitle: true,
+                showAgentMessages: true,
+                title: 'Flowise Bot',
+                titleAvatarSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
+                welcomeMessage: 'Hola! Hablemos de tributación',
+                errorMessage: 'Uuuuppsss ocurrió un error',
+                backgroundColor: '#ffffff',
+                backgroundImage: 'enter image path or link',
+                height: 700,
+                width: 400,
+                fontSize: 16,
+                starterPrompts: ["¿Qué es la tributación?", "¿Como se paga el IVA?"],
+                starterPromptFontSize: 15,
+                clearChatOnReload: false,
+                sourceDocsTitle: 'Sources:',
+                renderHTML: true,
+                botMessage: {
+                    backgroundColor: '#f7f8ff',
+                    textColor: '#303235',
+                    showAvatar: true,
+                    avatarSrc: 'https://api.dicebear.com/9.x/bottts/svg?seed=Sawyer'
+                },
+                userMessage: {
+                    backgroundColor: '#3B81F6',
+                    textColor: '#ffffff',
+                    showAvatar: true,
+                    avatarSrc: 'https://api.dicebear.com/9.x/rings/svg?seed=Luis'
+                },
+                textInput: {
+                    placeholder: 'Escribe tu pregunta',
+                    backgroundColor: '#ffffff',
+                    textColor: '#303235',
+                    sendButtonColor: '#3B81F6',
+                    maxChars: 50,
+                    maxCharsWarningMessage: 'You exceeded the characters limit. Please input less than 50 characters.',
+                    autoFocus: true,
+                    sendMessageSound: true,
+                    sendSoundLocation: 'send_message.mp3',
+                    receiveMessageSound: true,
+                    receiveSoundLocation: 'receive_message.mp3'
+                },
+                feedback: { color: '#303235' },
+                dateTimeToggle: { date: true, time: true },
+                footer: {
+                    textColor: '#303235',
+                    text: 'Powered by',
+                    company: 'Alfacorp',
+                    companyLink: 'https://www.alfacorp.cl/'
+                }
+            }
+        }
+    })
+  </script>
+</body>
+</html>
 
